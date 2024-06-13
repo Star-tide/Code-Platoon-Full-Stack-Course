@@ -1,0 +1,14 @@
+{
+  "name": "homeworkassignments",
+  "version": "1.0.0",
+  "description": "For testing my javascript homework assignments",
+  "main": "",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Brandon Nesslage",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
