@@ -1,0 +1,22 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - Flask App</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+
+<wrapper class="main_container">
+  <h1>Brandon's School API</h1>
+  <nav class ="nav_container">
+    <ul class="nav_unorder_list">
+      <li><a href="/students">Go to the Students Directory!</a></li>
+
+      <li><a href="/subjects">Go to the Subjects Directory!</a></li>
+
+      <li><a href="/teachers">Go to the Teachers Directory!</a></li>
+    </ul>
+  </nav>
+
+  <section class="content_container">
+    <header>{% block header %}{% endblock %}</header>
+      <article>{% block content %}{% endblock %}</article>
+  </section>
+</wrapper>

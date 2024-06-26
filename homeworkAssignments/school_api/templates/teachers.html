@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Teachers Page{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<h2>Current List of Teachers:</h2>
+  <!-- <ul>
+    {% for teacher in teachers %}
+      <li>{{teacher}}</li>
+    {%endfor%}
+  </ul> -->
+  <table class="greyGridTable">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Subject</th>
+        <th>ID</th>
+      </tr>
+    </thead>
+      <tbody>
+        {% for teacher in teachers %}
+        <tr>
+          <td>{{teacher['first_name']}}</td>
+          <td>{{teacher['last_name']}}</td>
+          <td>{{teacher['age']}}</td>
+          <td>{{teacher['subject']}}</td>
+          <td>{{teacher['id']}}</td>
+        </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+{% endblock %}
